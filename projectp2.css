@@ -1,1 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/*Basic reset to remove the little gap on the left hand side :) */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+    width: 100vw;
+    /*100% of the viewport's width! same with height!*/
+    height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+    /*This will only work for chrome,safari and opera!*/
+}
+
+
+.pageHeader {
+    /*Page header design*/
+    background-color: rgb(3, 105, 145);
+    color: white;
+    display: flex;
+}
+
+.spacerHeader {
+    /*Takes up all possible space between the elements it's between
+    This acts as a spacer to allow my links to travel to other end of page*/
+    flex: 1;
+}
+
+.headerLink {
+    /*design of the links present in the header(profile,settings,about) */
+    display: flex;
+    text-align: right;
+    gap: 2px;
+}
+
+.headerLink>label {
+    /*the label in the header link to be spaced around all sides by 2px
+    Since no actual links are used, labels are used instead hence label rather than a elements*/
+    margin: 2px;
+}
+
+.headerLink>label:hover {
+    /*when hovering over the headerlinks as they are labels to give them the same effect as hovering over an actual link*/
+    text-decoration: underline;
+}
+
+.uploadPost {
+    /*Config of the upload post 'window'*/
+    max-width: fit-content;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-inline:auto;
+}
+
+  
+
+.uploadHeader {
+    /*Config of the header on the upload post 'window'*/
+    color: cornflowerblue;
+    gap: 71%;
+    padding: 4px;
+    display: flex;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+
+.backButton {
+    /*Config of the back button*/
+    background-color: #4a90e2;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: white;
+    border: none;
+}
+
+.backButton:hover{
+    /*Config of hovering the back button*/
+    background-color: dimgray;
+}
+
+.upload {
+    /*Configuration of the upload button*/
+    background-color: #4a90e2;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: white;
+    border: none;
+}
+
+.upload:hover{
+    /*configuration of hovering over the upload button*/
+    background-color: dimgray;
+}
