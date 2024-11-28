@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Basic reset to remove the little gap on the left hand side :) */
+
+body {
+    /*Standardsises the font used, font default colours*/
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+    width: 100vw;
+    /*100% of the viewport's width! same with height!*/
+    height: 100vh;
+    overflow-x: hidden;
+    /*Causes elements that overflow to be hidden*/
+    line-height: 1.6;
+    /*standardises the height between lines*/
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+    /*This will only work for chrome,safari and opera!(hiding the scrollbar)*/
+}
+
+.pageHeader {
+    /*Page header design*/
+    padding-left: 2px;
+    background-color: rgb(3, 105, 145);
+    color: white;
+    display: flex;
+}
+
+.spacerHeader {
+    flex: 1;
+    /*Takes up all possible space between the elements it's between*/
+}
+
+/*This acts as a spacer to allow my links to travel to other end of page*/
+
+.headerLink {
+    /*design of the links present in the header(profile,settings,about) */
+    display: flex;
+    text-align: right;
+    gap: 2px;
+}
+
+.headerLink>label {
+    /*the label in the header link to be spaced around all sides by 2px*/
+    /*Since no actual links are used, labels are used instead hence label rather than a elements*/
+    margin: 2px;
+}
+
+.headerLink>label:hover {
+    /*when hovering over the headerlinks as they are labels to give them the same effect as hovering over an actual link*/
+    text-decoration: underline;
+}
+
+.naviBar {
+    /*Contains the user welcome message*/
+    border-style: solid;
+    border-color: #484848;
+    border-width: 1px 0px 1px 0px;
+    background-color: white;
+    display: flex;
+    /*to allow content to spill over to next line if not enough space*/
+    width: 100vw;
+    align-items: center;
+}
+
+.welcMes {
+    /*Welcome message*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*aligns contents(to center in this case) when items do not take up all the width space*/
+}
+
+.pfpImg {
+    /*pfp image */
+    max-width: 5vh;
+    max-height: 5vh;
+    /*Makes pfp adjust to window size*/
+    min-height: fit-content;
+    min-width: fit-content;
+    border-radius: 50%;
+    /*^ to make circle pfp*/
+    margin: 1vw 1vw 0vw 1vw;
+    object-fit: cover;
+    /*To specify that the image should be clipped to fit*/
+}
+
+
+.blahajImg {
+    /*personal blahaj picture :D*/
+    border-radius: 70%;
+    min-height: fit-content;
+    min-width: fit-content;
+    max-width: 5vh;
+    max-height: 5vh;
+    margin-left: 1vw;
+    object-fit: cover;
+}
+
+
+.welcMessage {
+    max-width: fit-content;
+    color: #4a90e2;
+}
+
+.naviBar2 {
+    /*Contains the buttons upload, modules filtering search*/
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+    /*vw = %of width of viewport*/
+    align-items: first baseline;
+    /*The items will be all equally aligned based on their cross axis!*/
+
+}
+
+.dropdownButton {
+    /*button to show the different modules you can navigate to*/
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s;
+    /*Slowly transition to new bg colour!*/
+}
+
+.dropdownButton:hover {
+    /*hover effect for dropdown button*/
+    background-color: #357ABD;
+}
+
+.dropdownmenu {
+    /*contains the different modules you can navigate to*/
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownMenu:hover {
+    /*changes cursor to a pointer when hovering over the drop down options(menu)*/
+    cursor: pointer;
+}
+
+
+.dropdownContent {
+    /*to allow drop down content for modules to be a drop down button!*/
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdownContent a {
+    /*decoration of the links in the drop down menu()*/
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {
+    /*causes links in dropdown menu to have hover reactions */
+    background-color: dimgray;
+}
+
+.dropdownmenu:hover .dropdownContent {
+    /*causes all elements in class to be displayed in individual lines of their own.
+    causes items in dropdown menu to look like a long list when hovered. */
+    display: block;
+}
+
+.dropdownmenu:hover .dropdownButton {
+    background-color: rgba(100, 100, 100, 50);
+    /*rgba used to be able to control the exact colour + opacity of colour used!*/
+}
+
+.dropdownmenu:hover .dropdownButton::after {
+    content: "▼";
+    /*Adds a "▼" when hovering beside the text on the button!*/
+}
+
+.uploadButton {
+    /*Upload button design configuration*/
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    /*To create a rounded-edge button*/
+    font-size: 14px;
+    border: none;
+}
+
+.uploadButton:hover {
+    /*configurations for when hovering over the upload button*/
+    cursor: pointer;
+    background-color: #357ABD;
+}
+
+.sec {
+    /*Section configurations(visible portion --> space between top and bottom posts!)*/
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /*^Have a certain colour and opacity to the sections */
+
+}
+
+.posts {
+    /*configurations of the whole line of posts in each module section*/
+    gap: 15px;
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    /*IE and Edge*/
+    scrollbar-width: none;
+    /*Firefox*/
+}
+
+.posts::-webkit-scrollbar {
+    /*Removes the scrollbar for the horizontal scrolling*/
+    display: none;
+    /*This will only work for chrome,safari and opera!*/
+}
+
+#postHeadSpecial {
+    /*Configuration for the post with the edit button!*/
+    display: flex;
+    gap: 10px;
+}
+
+.editPost {
+    /*configuration for edit the post button*/
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+}
+
+.editPost:hover {
+    /*hover reaction for edit post button*/
+    cursor: pointer;
+    background-color: #357ABD;
+}
+
+.edit {
+    /*configurations for the entire editing button + the options*/
+    position: relative;
+    display: inline-block;
+}
+
+.edit:hover {
+    cursor: pointer;
+}
+
+
+.editPostoptions {
+    /*configurations for the options for editing*/
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 80px;
+    z-index: 1;
+}
+
+.editPostoptions label {
+    /*Above options use a label element to hold the text, hence this configuration for any neccessarry adjusments*/
+    color: black;
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.editPostoptions label:hover {
+    /*hover reactions for the labels*/
+    background-color: dimgray;
+}
+
+.edit:hover .editPostoptions {
+    /*causes the block display for the edit options to occur when hovering over edit's elements*/
+    display: block;
+}
+
+.secModule {
+    /*what the module for each section's configuration is */
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.timestamp {
+    /*configuration for all timestamps for posts/comments in future if adding comments*/
+    font-size: 12px;
+    color: rgba(60, 60, 40, 5);
+    margin-bottom: 10px;
+}
+
+.postLinks a {
+    /*When posts include a link, and the link is then displayed on the post these are the configurations for it*/
+    color: #4a90e2;
+    text-decoration: underline;
+}
+
+.postLinks a:hover {
+    /*Hover reactions over links posted*/
+    color: #234163;
+}
+
+.title {
+    /*To make title bigger as it is the focal point of the post*/
+    font-size: larger;
+}
+
+.post {
+    /*Configurations for each post*/
+    display: inline-block;
+    background-color: rgb(186, 186, 186);
+    padding: 15px;
+    max-width: 40vw;
+    min-width: fit-content;
+    max-height: 40vh;
+    min-height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.post:hover {
+    /*Configurations for each post when mouse hovering over it*/
+    background-color: #777;
+}
+
+.postDesc {
+    /*Makes font size for each post be smaller as it is not emphasized*/
+    font-size: smaller;
+}
+
+.approvalButton {
+    /*configurations of the approval button*/
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.approvalButton:active {
+    /*configurations of the approval button when pressed(clicked)*/
+    background-color: #234163;
+}
+
+.interactionBar {
+    /*configurations of the interaction bar(approval,favourite,share,comments)*/
+    width: 100%;
+    display: flex;
+    align-items: first baseline;
+    /*Align items based on the line that the text in the first item sits on*/
+    margin-top: 10px;
+}
+
+.shareButton {
+    /*configs of the share button*/
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.shareButton:active {
+    /*config of the share button when clicked*/
+    background-color: #234163;
+}
+
+.commentButton {
+    /*config of the comment button*/
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.commentButton:active {
+    /*config of the comment button when clicked*/
+    background-color: #234163;
+}
+
+.bookmarkButton {
+    /*config of bookmark button*/
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.bookmarkButton:active {
+    /*config of the bookmark button when clicked*/
+    background-color: #234163;
+}

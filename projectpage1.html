@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--This makes it that users can use things like emojis!(html entities not in traditionall ASCII character set on the webpage) :)-->
+    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+    <!--This is for device compatibility, for comfortable viewing on different phone, laptop and other devices and their varying screen sizes!-->
+    <!--viewport = user's visible area of a webpage :)-->
+    <title>
+        Studyhub ADEV Project 1 page1
+    </title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <div class="pageHeader"><!--Header at the top of the page -->
+        <label>
+            <H4>StudyHub</H4>
+        </label>
+        <div class="spacerHeader">
+
+        </div>
+        <div class="headerLink">
+            <!--links on the header for users to access their settings, learn more about the site or customise their profile-->
+            <label>
+                <h6>Profile</h6>
+            </label>
+            <label>
+                <h6>Settings</h6>
+            </label>
+            <label>
+                <h6>About</h6>
+            </label>
+        </div>
+    </div>
+    <div class="naviBar"><!--Container for welcome message-->
+        <div class="welcMes"><!--Personalised welcome message for all users!-->
+            <div>
+                <img class="pfpImg" src="face.png"
+                    alt="Studio Ghibli profile picture"><!--When connected to database will display user's profile picture-->
+            </div>
+            <div>
+                <H2 class="welcMessage"> Hej [user]!</H2>
+                <!--When connected to database this will display the username-->
+            </div>
+            <div>
+                <img class="blahajImg" src="blahaj-soft-toy-shark__0710175_pe727378_s5.avif" alt="Blahaj picture">
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="naviBar2"><!--Second navigation bar used for navigating to each module and posting resource-->
+        <div class="upload">
+            <a href="projectpage2.html">
+                <button class="uploadButton">Upload resource</button>
+            </a>
+        </div>
+        <div class="dropdownmenu"><!--Drop down button for users to choose which module they wish to navigate to-->
+            <button class="dropdownButton">
+                Modules
+            </button>
+            <div class="dropdownContent">
+
+                <a href="#postHead1">Application Development Project</a>
+                <a href="#postHead2">Computational Thinking</a>
+                <a href="#postHead3">Data Visualisation and Analytics</a>
+                <a href="#postHead4">Database Application Development</a>
+                <a href="#postHead5">Data Structures and Algorithms</a>
+                <a href="#postHead6">Network and Cloud Technology</a>
+                <a href="#postHead7">User Experience and Interface Design</a>
+                <a href="#postHead8">Logic and Mathematics</a>
+                <a href="#postHead9">Cybersecurity Fundamentals</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <!--sec(seperated so that can call onto all secs for cohesive designing! ) -->
+        <div class="posts"><!--To group all groups under that module into one container-->
+            <div class="post"><!--For each individual post's container-->
+                <div class="postHead" id="postHeadSpecial"><!--Top of each post + special as this post will have an edit sign on it as it is a dummy post that's pretending to be the site viewer's post!-->
+                    <div class="secModule">
+                        <label>
+                            Application Development project
+                        </label>
+                    </div>
+                    <div class="edit">
+                        <button class="editPost">
+                            ✎ Edit
+                        </button>
+                        <div class="editPostoptions"><!--Drop down button that let's you choose between deleting or simply editing the post-->
+                            <label>✎Edit Post</label>
+                            <label>⌦Delete Post</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="timestamp"><!--Displays the time of posting-->
+                    <label>
+                        timestamp
+                    </label>
+                </div>
+                <div class="title"><!--Title that will be taken from database-->
+                    <label>
+                        My Notes
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a><!--Link that will be taken from database-->
+                </div>
+                <div class="postDesc"><!--optional description that will be taken from database if given -->
+                    <p>My past notes!</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton"><!--display number of users who approved the post-->
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton"><!--Display number of comments under post-->
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead1">
+                    <div class="secModule">
+                        <label>
+                            Application Development project
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead1">
+                    <div class="secModule">
+                        <label>
+                            Application Development project
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead1">
+                    <div class="secModule">
+                        <label>
+                            Application Development project
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead1">
+                    <div class="secModule">
+                        <label>
+                            Application Development project
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec" id="sec">
+        <div class="posts">
+            <div class="post">
+                <div class="postHead" id="postHead2">
+                    <div class="secModule">
+                        <label>
+                            Computational Thinking
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead2">
+                    <div class="secModule">
+                        <label>
+                            Computational Thinking
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead2">
+                    <div class="secModule">
+                        <label>
+                            Computational Thinking
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead2">
+                    <div class="secModule">
+                        <label>
+                            Computational Thinking
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead2">
+                    <div class="secModule">
+                        <label>
+                            Computational Thinking
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="posts">
+            <div class="post">
+                <div class="postHead" id="postHead3">
+                    <label class="secModule">
+                        Data Visualisation and Analytics
+                    </label>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead3">
+                    <label class="secModule">
+                        Data Visualisation and Analytics
+                    </label>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead2">
+                    <label class="secModule">
+                        Data Visualisation and Analytics
+                    </label>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead3">
+                    <label class="secModule">
+                        Data Visualisation and Analytics
+                    </label>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead3">
+                    <label class="secModule">
+                        Data Visualisation and Analytics
+                    </label>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec">
+        <div class="posts">
+            <div class="post">
+                <div class="postHead" id="postHead4">
+                    <div class="secModule">
+                        <label class="secModule">
+                            Database Application Development
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead4">
+                    <div class="secModule">
+                        <label class="secModule">
+                            Database Application Development
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead4">
+                    <div class="secModule">
+                        <label class="secModule">
+                            Database Application Development
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead4">
+                    <div class="secModule">
+                        <label class="secModule">
+                            Database Application Development
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead4">
+                    <div class="secModule">
+                        <label class="secModule">
+                            Database Application Development
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec">
+        <div class="posts">
+            <div class="post">
+                <div class="postHead" id="postHead5">
+                    <div class="secModule">
+                        <label>
+                            Data Structures and Algorithms
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead5">
+                    <div class="secModule">
+                        <label>
+                            Data Structures and Algorithms
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead5">
+                    <div class="secModule">
+                        <label>
+                            Data Structures and Algorithms
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead5">
+                    <div class="secModule">
+                        <label>
+                            Data Structures and Algorithms
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead5">
+                    <div class="secModule">
+                        <label>
+                            Data Structures and Algorithms
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="posts">
+            <div class="post">
+                <div class="postHead" id="postHead6">
+                    <div class="secModule">
+                        <label>
+                            Network and Cloud Technology
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead6">
+                    <div class="secModule">
+                        <label>
+                            Network and Cloud Technology
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead6">
+                    <div class="secModule">
+                        <label>
+                            Network and Cloud Technology
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead6">
+                    <div class="secModule">
+                        <label>
+                            Network and Cloud Technology
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead6">
+                    <div class="secModule">
+                        <label>
+                            Network and Cloud Technology
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="posts">
+            <div class="post">
+                <div class="postHead" id="postHead7">
+                    <div class="secModule">
+                        <label>
+                            User Experience and Interface Design
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead7">
+                    <div class="secModule">
+                        <label>
+                            User Experience and Interface Design
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead7">
+                    <div class="secModule">
+                        <label>
+                            User Experience and Interface Design
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead7">
+                    <div class="secModule">
+                        <label>
+                            User Experience and Interface Design
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead7">
+                    <div class="secModule">
+                        <label>
+                            User Experience and Interface Design
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="sec">
+        <div class="posts">
+            <div class="post">
+                <div class="postHead" id="postHead8">
+                    <div class="secModule">
+                        <label>
+                            Logic and Mathematics
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead8">
+                    <div class="secModule">
+                        <label>
+                            Logic and Mathematics
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead8">
+                    <div class="secModule">
+                        <label>
+                            Logic and Mathematics
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead8">
+                    <div class="secModule">
+                        <label>
+                            Logic and Mathematics
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead8">
+                    <div class="secModule">
+                        <label>
+                            Logic and Mathematics
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="posts">
+            <div class="post">
+                <div class="postHead" id="postHead9">
+                    <div class="secModule">
+                        <label>
+                            Cybersecurity Fundamentals
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead9">
+                    <div class="secModule">
+                        <label>
+                            Cybersecurity Fundamentals
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead9">
+                    <div class="secModule">
+                        <label>
+                            Cybersecurity Fundamentals
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead9">
+                    <div class="secModule">
+                        <label>
+                            Cybersecurity Fundamentals
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHead" id="postHead9">
+                    <div class="secModule">
+                        <label>
+                            Cybersecurity Fundamentals
+                        </label>
+                    </div>
+                    <div class="timestamp">
+                        <label>
+                            timestamp
+                        </label>
+                    </div>
+                </div>
+                <div class="title">
+                    <label>
+                        [Title]
+                    </label>
+                </div>
+                <div class="postLinks">
+                    <a class="postLinks" href="www.google.com">link</a>
+                </div>
+                <div class="postDesc">
+                    <p>[Text]</p>
+                </div>
+                <div class="interactionBar">
+                    <div class="appButton">
+                        <button class="approvalButton">
+                            🖒
+                        </button>
+
+                    </div>
+                    <div class="cmtButton">
+                        <button class="commentButton">
+                            🗨 Comment
+                        </button>
+
+                    </div>
+                    <div>
+                        <button class="shareButton">
+                            ➦ Share
+                        </button>
+                    </div>
+                    <div>
+                        <button class="bookmarkButton">
+                            ❤︎ Favourite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

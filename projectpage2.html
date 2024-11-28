@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--This makes it that users can use things like emojis!(html entities not in traditionall ASCII character set on the webpage) :)-->
+    <meta name="viewport" content="width+device-width, initial-scale=1.0">
+    <!--This is for device compatibility, for comfortable viewing on different phone, laptop and other devices and their varying screen sizes!-->
+    <!--viewport = user's visible area of a webpage :)-->
+    <title>
+        Studyhub ADEV Project 1 page2
+    </title>
+    <link rel="stylesheet" href="projectp2.css">
+</head>
+
+<body>
+    <div class="pageHeader"><!--Design for the page headers(long strip on the top of the page)-->
+        <label>
+            <H4>StudyHub</H4>
+        </label>
+        <div class="spacerHeader"><!--Added to act as a space between the word and the links in order to allow the links to be on the other end of the window-->
+
+        </div>
+        <div class="headerLink"><!--Links for users to access the different website settings/customisations/information-->
+            <label>
+                <h6>Profile</h6>
+            </label>
+            <label>
+                <h6>Settings</h6>
+            </label>
+            <label>
+                <h6>About</h6>
+            </label>
+        </div>
+    </div>
+    <div class="uploadPost"><!--Encompasses everything that would be in the container of post uploading.-->
+        <div class="uploadHeader"><!--header for the powt uploader-->
+            <label>
+                Post Resource
+            </label>
+            <a href="projectpage1.html"><!--button to let users return to previous page(home page)-->
+            <button class="backButton">
+                Back
+            </button>
+            </a>
+        </div>
+        <div class="uploadTextboxes"><!--container for the Textboxes(Title, text desc...)-->
+            <table>
+                <form><!--use form in order to use input types-->
+                    <tr>
+                        <td>
+                            <label>
+                                Title of post:
+                            </label>
+                            <input type="text" placeholder="Type your title here..." required><!--Title is required as it it neccessarry for-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><!--To form a post desc: [input here]-->
+                            <label>
+                                Post description(optional):
+                            </label>
+                            <textarea>
+
+                            </textarea>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div class="uploadResources">
+            <form>
+                <label><!--To allow users to categorise which resource their uploading under-->
+                    Module taken:
+                </label>
+                <select name="ModuleSel" id="ModuleSel" required>
+                    <option value="adev">ADEV</option>
+                    <option value="comt">COMT</option>
+                    <option value="dava">DAVA</option>
+                    <option value="ddev">DDEV</option>
+                    <option value="dsag">DSAG</option>
+                    <option value="nect">NECT</option>
+                    <option value="uxid">UXID</option>
+                    <option value="loma">LOMA</option>
+                    <option value="cyfun">CYFUN</option>
+                </select>
+                <!--Note: There will be an option to upload either a link/files/both Hence no required for these two and dont use a submit button, would have used JS to replace submit button functions-->
+                <input type="url" placeholder="Paste your link here...">
+                <input type="file">
+                <br><br>
+                <input type="button" value="Upload" class="upload">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
